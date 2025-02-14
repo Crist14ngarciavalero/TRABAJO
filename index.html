@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ActionMarcket</title>
+    <link rel="stylesheet" href="./CSS/estilos.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="./IMAG/logoac.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="./IMAG/logoac.png" sizes="16x16" type="image/png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./IMAG/logoac.png" type="image/x-icon">
+</head>
+
+
+<body>
+     <!-- Banner de Cookies -->
+     <div id="cookie-banner">
+      <p>Usamos cookies para mejorar la experiencia. <button onclick="aceptarCookies()">Aceptar 🍪</button></p>
+  </div>
+
+
+  <nav class="menu-bar">
+    <ul class="menu">
+      <li><a href="./index.html" class="menu-item active" tabindex="0">Inicio</a></li>
+      <li><a href="./../VIEWS/galeria.html" class="menu-item" tabindex="0">Galería</a></li>
+      <li><a href="./../VIEWS/presupuesto.html" class="menu-item" tabindex="0">Presupuesto</a></li>
+      <li><a href="./../VIEWS/contacto.html" class="menu-item" tabindex="0">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <header class="fondo-superior-inicio">
+    
+    <div class="logo-inicio">
+      <h1>ActionMARCKET</h1>
+      <p>Tu crecimiento digital comienza cuando tomas acción</p>
+    </div>
+  </header>
+
+
+      <!--QUIENES SOMOS-->
+        <!-- Sección que contiene el contenedor centrado -->
+        <section class="empresa">
+          
+        
+          <!-- Contenido de la empresa -->
+          <div class="contenido">
+            <h2>Bienvenido a Nuestra Empresa</h2>
+            <p>ActionMarket es una agencia de marketing digital dedicada a potenciar la presencia online de las empresas.<br>
+
+              Ofrecemos soluciones personalizadas en gestión de redes sociales, diseño web, SEO y publicidad digital, 
+              con un enfoque estratégico que busca maximizar los resultados y el retorno de inversión.<br>
+
+
+              En ActionMarket, nos apasiona ayudar a las marcas a destacarse en el mundo digital y lograr sus objetivos con éxito.</p>
+              <button class="btn-saber-mas">Saber más</button>
+          </div>
+          
+          <div class="video-container">
+            <video class="video" autoplay muted loop>
+              <source src="./IMAG//VIDEOS/uhd_30fps.mp4" type="video/mp4">
+              Tu navegador no soporta el video.
+            </video>
+          </div>
+
+
+        </section>
+        
+        
+<!--SERVICIOS-->
+        <!-- Sección que contiene el contenedor centrado -->
+        <section class="servicios">
+          <h2>Nuestros Servicios</h2>
+            <div class="servicios-container">
+                  <div class="servicios-box">
+                    <h3>SEO</h3>
+                    <p>Optimización para motores de búsqueda para mejorar tu posición en Google.</p>
+                    <img src="./IMAG/diseño.webp" alt="img">
+                  </div>
+                  <div class="servicios-box">
+                    <h3>Tiendas online</h3>
+                    <p>Desarrollo de tiendas: Potencia tus ventas con una tienda virtual intuitiva y atractiva.</p>
+                    <img src="./IMAG/diseño2.webp" alt="img2">
+                  </div>
+                  <div class="servicios-box">
+                    <h3>Diseño Web</h3>
+                    <p>Desarrollo de sitios web atractivos y optimizados para conversión.</p>
+                    <img src="./IMAG/diseño3.webp" alt="img3">
+                  </div>
+            </div>
+        </section>
+   
+<!--NOTICIAS JSON-->
+        <!-- Sección que contiene el contenedor centrado -->
+        <section class="seccion-centro">
+          <div id="noticias-wrapper" class="noticias-wrapper">
+              <h2>Últimas Noticias</h2>
+              <div id="noticias-container" class="noticias-container"></div>
+          </div>
+      </section>
+
+<!--PREGUNTAS FRECUENTES-->
+<section class="faq-container">
+  <h2>Preguntas Frecuentes</h2>
+  <div class="faq">
+    <div class="faq-item">
+      <div class="faq-question">¿Qué servicios ofrece la agencia?</div>
+      <div class="faq-answer">Ofrecemos diseño web, SEO, gestión de redes sociales, tiendas online y edición de video.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">¿Cuánto tiempo tarda un proyecto?</div>
+      <div class="faq-answer">El tiempo varía según la complejidad, pero generalmente entre 2 a 6 semanas.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">¿Puedo solicitar un presupuesto personalizado?</div>
+      <div class="faq-answer">Sí, puedes solicitarlo a través de nuestro formulario y te enviaremos un presupuesto ajustado a tus necesidades.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">¿Cómo garantizan la calidad del servicio?</div>
+      <div class="faq-answer">Trabajamos con un equipo de expertos y realizamos revisiones constantes para asegurar los mejores resultados.</div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<section class="testimonios-container">
+  <h2>TESTIMONIOS</h2>
+  <div class="carrusel">
+    <div class="testimonio active">
+      <p>"Gracias a esta agencia, mi negocio creció un 300% en ventas. ¡Increíble!"</p>
+      <h4>- Laura Gómez, CEO de TiendaX</h4>
+    </div>
+    <div class="testimonio">
+      <p>"El servicio de SEO mejoró nuestro tráfico web exponencialmente. Muy recomendados."</p>
+      <h4>- Carlos Ramírez, Fundador de BlogTech</h4>
+    </div>
+    <div class="testimonio">
+      <p>"La mejor agencia de marketing con la que he trabajado. Profesionales y creativos."</p>
+      <h4>- Ana López, Directora de Marketing</h4>
+    </div>
+    <div class="testimonio">
+      <p>"Desde que rediseñaron nuestra web, las conversiones han aumentado un 150%."</p>
+      <h4>- Miguel Torres, CEO de eCommercePro</h4>
+    </div>
+  </div>
+  <button class="prev" onclick="moverCarrusel(-1)">&#10094;</button>
+  <button class="next" onclick="moverCarrusel(1)">&#10095;</button>
+</section>
+
+
+
+
+
+
+<footer class="footer">
+  <div class="footer-content">
+    <!-- Redes Sociales -->
+    <div class="footer-social">
+      <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok">
+        <i class="fab fa-tiktok"></i>
+      </a>
+      <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+
+    <!-- Copyright y Aviso Legal -->
+    <div class="footer-center">
+      <p>&copy; 2025 ActionMarcket. Todos los derechos reservados.</p>
+      <a href="#aviso-legal" class="footer-link">AVISO LEGAL</a>
+    </div>
+
+    <!-- Ubicación y Teléfono -->
+    <div class="footer-info">
+      <p> Calle Lérida, 49, Santa Pola, Alicante</p>
+      <p> +34 600 123 456</p>
+      <p>actionmarcket@gmail.es</p>
+      <p>Lunes - Viernes: 9:00 - 18:00</p>
+    </div>
+  </div>
+</footer>
+
+
+
+    <script src="JS/script.js"></script>
+</body>
+
+
+
+
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ActionMarcket</title>
+    <link rel="stylesheet" href="./../CSS/estilos.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="./../IMAG/logoac.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="./../IMAG/logoac.png" sizes="16x16" type="image/png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./../IMAG/logoac.png" type="image/x-icon">
+
+
+<body>
+
+  <nav class="menu-bar">
+    <ul class="menu">
+      <li><a href="./../index.html" class="menu-item">Inicio</a></li>
+      <li><a href="./galeria.html" class="menu-item">Galería</a></li>
+      <li><a href="./../VIEWS/presupuesto.html" class="menu-item active">Presupuesto</a></li>
+      <li><a href="./contacto.html" class="menu-item">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <header class="fondo-superior-pres">
+    
+    <div class="logo-pres">
+      <h1>ActionMARCKET</h1>
+     
+    </div>
+  </header>
+
+  <section class="presupuesto-container">
+    <div class="form-container central-container">
+        <h2>Dejanos tus datos y Calcula tu Presupuesto</h2>
+        
+        <form id="presupuestoForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" maxlength="15" required>
+            <span class="error" id="errorNombre"></span>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" maxlength="40" required>
+            <span class="error" id="errorApellidos"></span>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" maxlength="9" required>
+            <span class="error" id="errorTelefono"></span>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error" id="errorEmail"></span>
+        
+            <label for="producto">Producto:</label>
+            <select id="producto">
+                <option value="500">Diseño Web - 500€</option>
+                <option value="700">SEO - 700€</option>
+                <option value="900">Tiendas Online - 900€</option>
+                <option value="400">Blogs - 400€</option>
+                <option value="600">Edición de Video - 600€</option>
+            </select>
+
+            <label for="plazo">Plazo de entrega (meses):</label>
+            <input type="number" id="plazo" min="1" max="12" value="1">
+
+            <fieldset>
+                <legend>Extras:</legend>
+                <input type="checkbox" class="extra" value="100"> <label>Soporte técnico +100€</label>
+                <input type="checkbox" class="extra" value="150"> <label>Mantenimiento +150€</label>
+                <input type="checkbox" class="extra" value="200"> <label>Gestión de redes sociales +200€</label>
+            </fieldset>
+
+            <h3>Presupuesto Total: <span id="total">0</span>€</h3>
+            
+            <div class="condiciones-container">
+                <input type="checkbox" id="condiciones" required> 
+                <label for="condiciones">Acepto las condiciones</label>
+            </div>
+            
+            <button class="btn-form" type="submit">ENVIAR</button>
+            <button class="btn-pres2" type="reset" id="reset">RESETEAR</button>
+        </form>
+    </div>
+</section>
+
+
+
+
+  <footer class="footer">
+    <div class="footer-content">
+      <!-- Redes Sociales -->
+      <div class="footer-social">
+        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok">
+          <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+  
+      <!-- Copyright y Aviso Legal -->
+      <div class="footer-center">
+        <p>&copy; 2025 ActionMarcket. Todos los derechos reservados.</p>
+        <a href="#aviso-legal" class="footer-link">AVISO LEGAL</a>
+      </div>
+  
+      <!-- Ubicación y Teléfono -->
+      <div class="footer-info">
+        <p> Calle Lérida, 49, Santa Pola, Alicante</p>
+        <p> +34 600 123 456</p>
+        <p>actionmarcket@gmail.es</p>
+        <p>Lunes - Viernes: 9:00 - 18:00</p>
+      </div>
+    </div>
+  </footer>
+  
+  
+  
+        <script src="./../JS/script.js"></script>
+        <script src="./../JS/presupuesto.js"></script>
+</body>
+  
+  
+  
+  
+  
+  </html>

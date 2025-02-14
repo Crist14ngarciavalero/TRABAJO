@@ -1,0 +1,1063 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+
+
+
+
+/*alerta de aceptar cookies------
+------------------------
+------------------------*/
+
+
+.cookie-banner.show {
+  opacity: 1;
+  visibility: visible;
+}
+ /* Estilo para el banner de cookies */
+ /* Estilo para el banner de cookies */
+ #cookie-banner {
+  display: none; /* Inicialmente oculto */
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 1000;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 16px;
+}
+
+#cookie-banner button {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#cookie-banner button:hover {
+  background-color: #cc7a00;
+}
+
+
+
+
+
+
+
+/* CSS PARA BARRA DE MENU
+---------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------*/
+
+/* Barra de menú en la parte superior */
+.menu-bar {
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #011a3c;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 18px;
+  z-index: 1000;
+  
+
+}
+
+.menu {
+  list-style: none; /* Elimina los puntos de lista */
+  display: flex; /* Alinea los elementos en línea */
+  justify-content: center; /* Centra horizontalmente */
+  gap: 100px; /* Espaciado entre los elementos */
+}
+
+.menu-item {
+  text-decoration: none; /* Sin subrayado */
+  color: white; /* Color blanco */
+  font-size: 18px; /* Tamaño de fuente */
+  font-family: 'Montserrat', sans-serif; /* Fuente elegante */
+  padding: 10px 20px; /* Espaciado interno */
+  transition: all 0.3s ease; /* Transición suave */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+
+.menu-item:hover{
+    background-color: #9802b7; /* Color cuando se pasa el ratón o se hace clic */
+    color: white;
+}
+
+.menu-item.active {
+    background-color: #a903b5; /* Color para la sección activa */
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+/* CSS PARA IMAGEN DE FONDO
+---------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------*/
+
+
+.fondo-superior-cont {
+  height: 90vh; /* Ocupa toda la altura de la ventana */
+  background-image:linear-gradient(rgba(1, 1, 1, 0.551), rgba(1, 1, 1, 0.584)) ,url('./../IMAG/fotos-Alicante.jpeg'); /* Ruta de la imagen */
+  background-size: cover; /* La imagen cubrirá toda la sección */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  display: flex; /* Opcional: para centrar contenido */
+  flex-direction: column; /* Opcional: para apilar contenido verticalmente */
+  justify-content: center; /* Centrar verticalmente el contenido */
+  align-items: center; /* Centrar horizontalmente el contenido */
+  color: white; /* Cambia el color del texto para que sea legible */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Sombra para texto */
+  padding: 20px; /* Espaciado interno */
+
+}
+
+
+/* Título principal */
+.logo-cont h1 {
+  text-align: center;
+  margin-top: -20%;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  animation: brillar 2s infinite; /* Animación de brillo */
+  font-family: 'Cinzel', serif; /* Fuente elegante */
+  margin-bottom: 20px; /* Espaciado debajo del título */
+}
+
+
+
+
+
+
+
+
+/*FONDO Y LOGO PRESUPUESTO*/
+
+
+.fondo-superior-pres {
+  height: 90vh; /* Ocupa toda la altura de la ventana */
+  background-image:linear-gradient(rgba(1, 1, 1, 0.63), rgba(1, 1, 1, 0.69)) ,url('./../IMAG/fotodinero.jpeg'); /* Ruta de la imagen */
+  background-size: cover; /* La imagen cubrirá toda la sección */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  display: flex; /* Opcional: para centrar contenido */
+  flex-direction: column; /* Opcional: para apilar contenido verticalmente */
+  justify-content: center; /* Centrar verticalmente el contenido */
+  align-items: center; /* Centrar horizontalmente el contenido */
+  color: white; /* Cambia el color del texto para que sea legible */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Sombra para texto */
+  padding: 20px; /* Espaciado interno */
+
+}
+
+
+/* Título principal */
+.logo-pres h1 {
+  text-align: center;
+  margin-top: -20%;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  animation: brillar 2s infinite; /* Animación de brillo */
+  font-family: 'Cinzel', serif; /* Fuente elegante */
+  margin-bottom: 20px; /* Espaciado debajo del título */
+}
+
+
+
+
+
+
+
+
+
+
+/*FONDO Y LOGO GALERIA */
+
+
+.fondo-superior-galeria {
+  height: 90vh; /* Ocupa toda la altura de la ventana */
+  background-image:linear-gradient(rgba(1, 1, 1, 0.703), rgba(1, 1, 1, 0.719)) ,url('./../IMAG/fotogaleria3.webp'); /* Ruta de la imagen */
+  background-size: cover; /* La imagen cubrirá toda la sección */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  display: flex; /* Opcional: para centrar contenido */
+  flex-direction: column; /* Opcional: para apilar contenido verticalmente */
+  justify-content: center; /* Centrar verticalmente el contenido */
+  align-items: center; /* Centrar horizontalmente el contenido */
+  color: white; /* Cambia el color del texto para que sea legible */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Sombra para texto */
+  padding: 20px; /* Espaciado interno */
+
+}
+
+
+/* Título principal */
+.logo-galeria h1 {
+  text-align: center;
+  margin-top: -20%;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  animation: brillar 2s infinite; /* Animación de brillo */
+  font-family: 'Cinzel', serif; /* Fuente elegante */
+  margin-bottom: 20px; /* Espaciado debajo del título */
+}
+
+
+
+/*FONDO Y LOGO INICIO*/
+
+
+
+/* Fondo de la sección principal */
+.fondo-superior-inicio {
+  height: 90vh; /* Ocupa toda la altura de la ventana */
+  background-image:linear-gradient(rgba(1, 1, 1, 0.492), rgba(1, 1, 1, 0.497)) ,url('./../IMAG/pexels-shkrabaanthony-5475793.jpg'); /* Ruta de la imagen */
+  background-size: cover; /* La imagen cubrirá toda la sección */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  display: flex; /* Opcional: para centrar contenido */
+  flex-direction: column; /* Opcional: para apilar contenido verticalmente */
+  justify-content: center; /* Centrar verticalmente el contenido */
+  align-items: center; /* Centrar horizontalmente el contenido */
+  color: white; /* Cambia el color del texto para que sea legible */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Sombra para texto */
+  padding: 20px; /* Espaciado interno */
+
+}
+
+
+/* Título principal */
+.logo-inicio h1 {
+  text-align: center;
+  margin-top: -20%;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  animation: brillar 2s infinite; /* Animación de brillo */
+  font-family: 'Cinzel', serif; /* Fuente elegante */
+  margin-bottom: 20px; /* Espaciado debajo del título */
+}
+
+/* Subtítulo con animación de escritura */
+.logo-inicio p {
+  margin-top: 15%;
+  font-size: 30px;
+  color: white;
+  font-style:unset;
+  font-family:Arial, Helvetica, sans-serif;
+  overflow: hidden; /* Oculta el texto que no se muestra aún */
+  white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+  width: 0; /* Inicialmente ancho 0 */
+  animation: escribir 5s forwards; /* Animación de escritura */
+}
+
+/* Animación de escritura */
+@keyframes escribir {
+  from {
+    width: 0; /* Ancho inicial 0 */
+  }
+  to {
+    width: 100%; /* El texto se expande hasta su tamaño completo */
+  }
+}
+
+/* Animación de brillo */
+@keyframes brillar {
+  0% {
+    text-shadow: 0 0 10px #04252a, 0 0 20px #00bcd4, 0 0 30px #00bcd4;
+  }
+  100% {
+    text-shadow: 0 0 20px #00bcd4, 0 0 30px #00bcd4, 0 0 40px #00bcd4;
+  }
+}
+
+
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+/* ESTILO PARA DESCRIPCION -----------------------------------------------
+  ----------------------------------------------------------------------*/
+/* Estilos generales para la sección .empresa */
+
+/* Estilos generales */
+
+.video-container {
+  position: absolute;
+  display: flex;
+  animation: slideIn 2s forwards; /* Animación hacia dentro */
+}
+
+.video {
+  width: 600px; /* Dimensiones pequeñas */
+  height: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+}
+
+/* Animación para deslizarse desde la derecha */
+@keyframes slideIn {
+  from {
+    right: -100%; /* Empieza fuera de la pantalla */
+  }
+  to {
+    right: 20px; /* Ajusta según la posición deseada */
+  }
+}
+
+
+
+
+.empresa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 50px 20px;
+  padding-top: 10%;
+  border-top: 2px solid black;
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+}
+
+
+
+/* Estilo para el contenido de la empresa */
+.empresa .contenido {
+  width: 40%;
+  padding-right: 20px;
+  position: relative;
+  z-index: 1;
+  
+}
+
+/* Título de la sección */
+.empresa h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #f7eeee;
+  opacity: 0; /* Empezamos con el título invisible */
+  transform: translateX(-100%); /* Comienza fuera de la pantalla, a la izquierda */
+  animation: deslizarTitulo 1s forwards; /* Aplicamos la animación */
+  animation-delay: 0.5s; /* Retraso para la animación */
+}
+
+/* Estilo para el párrafo de la empresa */
+.empresa p {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgb(241, 231, 231);
+  opacity: 0; /* Comienza invisible */
+  transform: translateX(-100%); /* Empieza fuera de la pantalla, a la izquierda */
+  animation: deslizarTexto 1s forwards; /* Animación para el párrafo */
+  animation-delay: 3s; /* Retraso para que empiece después del título */
+}
+/* Botón de "Leer más" */
+.empresa .contenido .btn-saber-mas {
+  position: relative;
+  margin-top: 15px;
+  width: 50%; /* ✅ Para que se mantenga dentro */
+  background-color: rgb(66, 3, 70);
+  color: #fbf5f5;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0; /* Comienza invisible */
+  transform: translateX(-100%); /* Comienza fuera de la pantalla */
+  animation: deslizarBoton 4s forwards; /* Animación para el botón */
+  animation-delay: 2.5s; /* Retraso para que empiece después del párrafo */
+}
+
+
+/* Animación para el título (aparece de izquierda a derecha) */
+@keyframes deslizarTitulo {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animación para el párrafo (aparece de izquierda a derecha) */
+@keyframes deslizarTexto {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animación para el botón (aparece de izquierda a derecha) */
+@keyframes deslizarBoton {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+
+
+/* NOTICIAS JSON--------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------- */
+
+
+/* Sección centrada */
+.seccion-centro {
+  display: flex;
+  justify-content: center;  /* Centra el contenido horizontalmente */
+  align-items: center;      /* Centra el contenido verticalmente */
+  height: 30vh;            /* Asegura que ocupe toda la altura de la ventana */
+  background: white;
+  padding-top: 7%;
+  padding-bottom: 7%;
+  color: #030101;
+  text-align: center;
+}
+
+/* Contenedor de Noticias - Disposición horizontal */
+.noticias-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;  /* Alinea las noticias en fila (horizontal) */
+  overflow-x: auto;    /* Permite desplazamiento horizontal si hay demasiadas noticias */
+  gap: 60px;           /* Espacio aumentado entre las noticias */
+  padding-bottom: 15px;
+  padding-right: 10px;
+}
+
+/* Caja de Noticia */
+.noticia {
+  background-color: #ffffff;
+  border-radius: 6px; /* Bordes redondeados */
+  padding: 20px;
+  width: 170px; /* Tamaño reducido */
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1); /* Sombra más ligera */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  flex-shrink: 0; /* Evita que las cajas se reduzcan de tamaño */
+  background-color: white;
+  border: 2px solid #030101 ;
+  cursor: pointer;
+}
+
+/* Efecto hover para cada noticia */
+.noticia:hover {
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.607); /* Sombra más pronunciada */
+}
+
+/* Título dentro de la Noticia */
+.noticia h2 {
+  font-size: 1.2rem; /* Tamaño reducido para encajar en la caja */
+  font-weight: bold;
+  color: #4b0082; /* Morado intenso */
+  margin-bottom: 25px; /* Espacio debajo del título */
+  text-align: center;
+}
+
+/* Descripción Oculta */
+.noticia p {
+  display: none;
+  font-size: 1rem; /* Tamaño más pequeño */
+  color: #555;
+  margin-top: 8px;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+/* Mostrar Descripción */
+.noticia.mostrada p {
+  display: block;
+  color: #333; /* Color más neutro para el texto expandido */
+}
+
+/* Fecha de la Noticia */
+.noticia .fecha {
+  font-size: 0.8rem; /* Tamaño reducido */
+  color: #888;
+  margin-top: 6px;
+  font-style: italic;
+  text-align: right;
+}
+
+/* Barra de desplazamiento para el contenedor de noticias */
+.noticias-container::-webkit-scrollbar {
+  height: 4px; /* Más delgada */
+}
+
+.noticias-container::-webkit-scrollbar-thumb {
+  background-color: #6a5acd; /* Color acorde al tema */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Ajustes finales para fuentes */
+.noticias-container {
+  font-size: 0.7rem; /* Tamaño reducido */
+}
+
+/* Animación para mejorar el atractivo */
+@keyframes subirYExpandir {
+  0% {
+    transform: translateY(10px) scale(0.6);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Aplicar animación a cada noticia */
+.noticia {
+  animation: subirYExpandir 0.8s ease-in-out;
+}
+
+
+
+
+
+
+
+
+/*SERVICIOS---------------------------------------------------------------------------
+*/
+.servicios {
+  height: 70vh;
+  text-align: center;
+  padding: 50px 20px 100px;
+  padding-top: 7%;
+  background-color: black;
+
+  
+}
+.servicios h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 3em;
+  margin-bottom: 20px;
+  color:rgb(243, 239, 239);
+}
+.servicios img {
+  width: 300px;
+  height: auto;
+   
+  
+}
+.servicios h3 {
+font-size: 2em;
+
+}
+.servicios-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.servicios-box {
+  color: #f9f9f9;
+  background: #fdfefe;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(100px); /* Entrada desde abajo */
+  opacity: 0;
+  transition: all 0.8s ease;
+  background: linear-gradient(to right, #3b0874, #222935); /* Gradiente atractivo para el fondo */
+}
+
+.servicios-box:nth-child(odd) {
+  transform: translateX(-100px); /* Entrada desde la izquierda */
+}
+
+.servicios-box:nth-child(even) {
+  transform: translateX(100px); /* Entrada desde la derecha */
+}
+
+/* Cuando se hace visible */
+.servicios-box.show {
+  transform: translateX(0) translateY(0); /* Vuelve a su posición original */
+  opacity: 1;
+}
+
+
+
+
+
+
+/*PREGUNTAS FRECUENTES-----------------------
+-----------------------------------------------*/
+.faq-container {
+  width: 80%;
+  max-width: 800px;
+  margin: 10vh auto;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.faq-item {
+  background: #0b1b56;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.faq-item:hover {
+  background: #020420;
+}
+
+.faq-question {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.faq-answer {
+  display: none;
+  padding-top: 10px;
+  font-size: 1rem;
+  color: #f3eded;
+}
+
+
+
+
+
+/* CSS PARA FOOTER
+---------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------*/
+
+/* Footer general */
+.footer {
+  background-color: #000000; /* Fondo gris oscuro */
+  color: white; /* Texto blanco */
+  padding: 50px 10px;
+  font-size: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Tres columnas iguales */
+  gap: 20px;
+  width: 100%;
+  height: 15vh;
+  max-width: 1200px;
+}
+
+/* Redes Sociales */
+.footer-social {
+  display: flex;
+  gap: 15px; /* Espacio entre iconos */
+  align-items: center;
+  justify-content: flex-start; /* Alineado a la izquierda */
+}
+
+.footer-social a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-social a:hover {
+  transform: scale(1.2); /* Agrandar icono al pasar */
+  color: #1da1f2; /* Color azul para hover */
+}
+
+/* Copyright y Aviso Legal */
+.footer-center {
+  text-align: center; /* Centrado en la columna */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-center p {
+  margin: 5px 0;
+}
+
+.footer-center .footer-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin-top: 5px;
+  transition: color 0.3s ease;
+}
+
+.footer-center .footer-link:hover {
+  color: #1da1f2; /* Azul en hover */
+}
+
+/* Ubicación y Teléfono */
+.footer-info {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Alineado a la derecha */
+}
+
+.footer-info p {
+  margin: 5px 0;
+  line-height: 1.4;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    text-align: center;
+    gap: 15px;
+  }
+
+  .footer-info {
+    align-items: center; /* Centrar en pantallas pequeñas */
+    text-align: center;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+/*GALERIA DINAMICA ------------
+----------------------------
+--------------------------*/
+/* Contenedor de la galería */
+.galeria-container h2{
+color: #082e6f;
+text-align: center;
+}
+
+/* Estilos de las secciones */
+.galeria-container {
+  text-align: center;
+  margin: 20px auto;
+  width: 80%;
+}
+
+.secciones {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.seccion {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.3s ease, transform 0.2s;
+  outline: none; /* Evita el borde de selección */
+  border: 2px solid transparent;
+}
+
+.seccion:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Para mantener la sección activa */
+.seccion:active,
+.seccion:focus {
+  background-color: #ffc905c2;
+  color: black;
+  font-weight: bold;
+  border: 2px solid #333;
+}
+
+
+/* Galería de imágenes */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 15%;
+  border-top: 20px;
+  gap: 50px;
+}
+
+.galeria img, .galeria video {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  margin-top: 3%;
+}
+
+.galeria img:hover, .galeria video:hover {
+  transform: scale(1.5);
+}
+
+/* Modal para ver en grande */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+}
+
+.modal-content {
+  max-width: 80%;
+  max-height: 80%;
+  margin: auto;
+  display: block;
+  margin-top: 5%;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
+
+
+/*     TESTIMONIOS----------
+--------------------
+----------------
+--------------
+*/
+
+.testimonios-container {
+  text-align: center;
+  width: 80%;
+  max-width: 800px; /* Limita el ancho para que se vea más centrado */
+  margin: 10vh auto; /* Aumenta el margen superior para centrar mejor */
+  position: relative;
+  padding: 40px 20px;
+  background: rgba(246, 244, 248, 0.681);
+  color: rgb(13, 11, 11);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 30vh; /* Asegura que tenga altura suficiente */
+}
+
+/* Para centrar los botones mejor */
+.testimonios-container button{
+  
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: rgb(5, 6, 44);
+    cursor: pointer;
+}
+
+.testimonios-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.carrusel {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+}
+
+.testimonio {
+  display: none; /* Oculta los testimonios por defecto */
+  text-align: center;
+  padding: 20px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.testimonio.active {
+  display: block; /* Muestra solo el testimonio activo */
+}
+
+.testimonio p {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.testimonio h4 {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+button:hover {
+  color: #ffcc00;
+}
+
+
+
+
+
+
+/* CSS PARA FORMULARIO Y PRESUPUESTOS
+---------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------*/
+.presupuesto-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200vh;
+  background-color: #f4f4f4;
+}
+.central-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+.form-container h2 {
+  text-align: center;
+}
+.form-container label {
+  display: block;
+  margin-top: 10px;
+}
+.form-container input, .form-container select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+fieldset {
+  margin-top: 15px;
+  padding: 10px;
+}
+.condiciones-container {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 3vh;
+}
+.btn-form, .btn-pres2 {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn-form {
+  background-color: #28a745;
+  color: white;
+}
+.btn-pres2 {
+  background-color: #dc3545;
+  color: white;
+}
+
+
+
+/* CSS PARA CONTACTO
+---------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------*/
+#map {
+  width: 100%;
+  height: 500px;
+}
+
+.contacto {
+
+  text-align: center;
+  color: #0b1b56;
+}
+
